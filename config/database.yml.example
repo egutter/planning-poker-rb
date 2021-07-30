@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  host: localhost
+  pool: 5
+  database: planning_poker_rb_dev
+
+test:
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  host: localhost
+  pool: 5
+  database: planning_poker_rb_test
+
+staging: &staging
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  <<: *staging

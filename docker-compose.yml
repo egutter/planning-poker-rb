@@ -1,0 +1,12 @@
+planning-poker-rb-db:
+  image: postgres:13.3-alpine
+  ports:
+    - 5432:5432
+  environment:
+    POSTGRESQL_USER: postgres
+    POSTGRESQL_PASS: postgres
+    POSTGRES_PASSWORD: postgres
+planning-poker-rb-redis:
+  image: redis:6.2.5-alpine
+  ports:
+    - 6379:6379
