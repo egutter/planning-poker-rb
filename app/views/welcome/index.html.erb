@@ -1,0 +1,8 @@
+<p>
+  Hola, ingresá tu nombre para unirte a alguna de las sesiones de estimación!
+  <%= form_tag enter_path do %>
+    <%= label_tag :name, 'Nombre' %>
+    <%= text_field_tag :name %>
+    <%= submit_tag 'Entrar!' %>
+  <% end %>
+</p>

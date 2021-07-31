@@ -1,0 +1,11 @@
+<h2>Sesiones para unirse:</h2>
+<p> <%= session[:current_user] %>, estas son las sesiones a las que podés unirte:</p>
+<ul>
+  <% @sessions.each do |session| %>
+  <li>
+    <%= link_to session.title, session_path(session.id) %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Salir!', exit_path %>
