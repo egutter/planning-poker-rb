@@ -6,7 +6,6 @@ ruby '3.0.2'
 gem 'rails', '~> 6.1.4'
 
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'bulma-rails', '~> 0.9.1'
 gem 'hotwire-rails', '~> 0.1.3'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '~> 1.2.3'
